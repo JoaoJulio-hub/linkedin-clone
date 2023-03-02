@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  margin: 0 20px;
+  height: fit-content;
+}
+
+.feed-input-container {
+  height: fit-content;
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+.feed-input {
+  display: flex;
+  padding: 20px;
+  color: gray;
+  padding-left: 15px;
+}
+
+.feed-input-text {
+  display: flex;
+  color: gray;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 15px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.feed-input-text > form {
+  display: flex;
+  width: 100%;
+}
+
+.feed-input-text > form > input {
+  border: none;
+  flex: 1;
+  margin-left: 10px;
+  outline: none;
+  font-weight: 600;
+}
+
+.feed-input-text > form > button {
+  display: none;
+}
+
+.feed-input-avatar {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.feed-input-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 980px) {
+  .feed {
+    align-items: center;
+  }
+
+  .feed-input-container {
+    width: 440px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .feed {
+    align-items: center;
+  }
+
+  .feed-input-container {
+    width: 440px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .feed-input-container {
+    margin-right: -5px;
+    width: 400px;
+  }
+}
